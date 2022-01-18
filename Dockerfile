@@ -11,7 +11,6 @@ WORKDIR /code
 # Install dependencies
 COPY requirements.txt /code/
 RUN pip install -r requirements.txt
-RUN pip install psycopg2
 
 # Copy project
 COPY . /code/
